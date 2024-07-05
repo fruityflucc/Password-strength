@@ -11,11 +11,14 @@ pass.addEventListener("input", () => {
 
   if (pass.value.length < 4) {
     strn.innerHTML = "Weak";
+    msg.style.color = "#ff5925";
   } else if (pass.value.length >= 4 && pass.value.length < 8) {
     strn.innerHTML = "Medium";
+    msg.style.color = "yellow";
   }
 
   if (pass.value.length >= 8) {
     strn.innerHTML = "Strong";
+    msg.style.color = "green";
   }
 });
